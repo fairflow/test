@@ -1,8 +1,19 @@
--- | Main entry point to the application.
+{-# LANGUAGE OverloadedStrings #-}
+
+-- This template is described in detail in the School of Haskell tutorials at
+-- https://www.fpcomplete.com/school/ide-tutorials/buiding-a-file-hosting-service-in-yesod
 
 module Main where
 
--- | The main entry point.
+import Control.Concurrent.STM
+import Data.IntMap
+import Yesod
+
+import Dispatch ()
+import Foundation
+
 main :: IO ()
 main = do
-  putStrLn "Welcome to the FP Haskell Center!"
+    tstore <- atomically $ newTVar empty
+    tident <- atomically $ newTVar 0
+    warpEnv $ App tident tstore
