@@ -2,6 +2,9 @@
 {-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE TemplateHaskell #-}
 
+-- This template is described in detail in the School of Haskell tutorials at
+-- https://www.fpcomplete.com/school/ide-tutorials/buiding-a-file-hosting-service-in-yesod
+
 module Handler.Preview where
 
 import Control.Exception hiding (Handler)

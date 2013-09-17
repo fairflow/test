@@ -3,6 +3,9 @@
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE TypeFamilies #-}
 
+-- This template is described in detail in the School of Haskell tutorials at
+-- https://www.fpcomplete.com/school/ide-tutorials/buiding-a-file-hosting-service-in-yesod
+
 module Foundation where
 
 import Control.Concurrent.STM

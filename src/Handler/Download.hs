@@ -1,5 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 
+-- This template is described in detail in the School of Haskell tutorials at
+-- https://www.fpcomplete.com/school/ide-tutorials/buiding-a-file-hosting-service-in-yesod
+
 module Handler.Download where
 
 import qualified Data.Text as Text
