@@ -1,22 +1,22 @@
-extensions: {}
-cabal-file: project.cabal
-extra-packages: ''
-version: 1
-environment: ghc-7.4.2-stable-13.09
 module-template: ! 'module MODULE_NAME where
 
 '
-ghc-args: []
+extensions: {}
+environment: ghc-7.4.2-stable-13.09
+cabal-file: project.cabal
 modules:
-  Main(src/Main.hs):
-    filename: src/Main.hs
   Foundation:
     filename: src/Foundation.hs
-  Dispatch:
-    filename: src/Dispatch.hs
   Handler.Home:
     filename: src/Handler/Home.hs
   Handler.Preview:
     filename: src/Handler/Preview.hs
   Handler.Download:
     filename: src/Handler/Download.hs
+  Dispatch:
+    filename: src/Dispatch.hs
+  Main(src/Main.hs):
+    filename: src/Main.hs
+version: 1
+extra-packages: ''
+ghc-args: []
